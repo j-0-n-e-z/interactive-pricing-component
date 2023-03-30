@@ -44,8 +44,29 @@
 		cursor: pointer;
 	}
 
+	.range-input::-moz-range-thumb {
+		-webkit-appearance: none;
+		appearance: none;
+		height: 50px;
+		width: 50px;
+		border-radius: 100%;
+		margin-top: -20px;
+		background-color: hsl(var(--strong-cyan));
+		background-image: url('./assets/images/icon-slider.svg');
+		background-size: 55%;
+		background-repeat: no-repeat;
+		background-position: center;
+		box-shadow: 0 15px 40px 0 hsl(var(--strong-cyan));
+		cursor: pointer;
+	}
+
 	.range-input::-webkit-slider-thumb:hover {
 		filter: brightness(90%);
-    transition: all 0.08s ease;
+		transition: all 0.08s ease;
+	}
+
+	.range-input::-moz-range-thumb:hover {
+		filter: brightness(90%);
+		transition: all 0.08s ease;
 	}
 }
