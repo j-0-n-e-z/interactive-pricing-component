@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--light-gray: 224 65% 95%;
+		--strong-cyan: 174 86% 45%;
+		--light-cyan: 174 77% 80%;
+		--range-track-height: 10px;
+	}
+}
+
+@layer components {
+	.range-input {
+		-webkit-appearance: none;
+		appearance: none;
+		border-radius: 999px;
+	}
+
+	.range-input::-webkit-slider-runnable-track {
+		height: var(--range-track-height);
+	}
+
+	.range-input::-moz-range-track {
+		height: var(--range-track-height);
+	}
+
+	.range-input::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		appearance: none;
+		height: 50px;
+		width: 50px;
+		border-radius: 100%;
+		margin-top: -20px;
+		background-color: hsl(var(--strong-cyan));
+		background-image: url('./assets/images/icon-slider.svg');
+		background-size: 55%;
+		background-repeat: no-repeat;
+		background-position: center;
+		box-shadow: 0 15px 40px 0 hsl(var(--strong-cyan));
+		cursor: pointer;
+	}
+
+	.range-input::-webkit-slider-thumb:hover {
+		filter: brightness(90%);
+    transition: all 0.08s ease;
+	}
+}
