@@ -62,6 +62,7 @@ function App() {
 						</div>
 					</div>
 					<input
+						id='range'
 						className='range-input absolute top-[182px] mb-[57px] w-[calc(100%-6rem)] lg:static lg:w-full'
 						type='range'
 						value={price}
@@ -77,19 +78,17 @@ function App() {
 					/>
 					<div className='mb-20 flex lg:mb-10'>
 						<label
-							htmlFor='billing'
+							htmlFor='billing-toggle'
 							className='ml-16 flex items-center justify-center text-2xl lg:ml-[105px] lg:text-[12px] lg:leading-normal'
 						>
 							<span className='mr-7 min-w-fit cursor-pointer text-grayBlue lg:mr-4 lg:w-auto'>Monthly Billing</span>
-							<div className='flex items-center'>
-								<input
-									id='billing'
-									type='checkbox'
-									className='peer flex h-[44px] w-[84px] cursor-pointer appearance-none items-center rounded-full bg-lightGrayBlue transition checked:bg-strongCyan hover:bg-lightCyan checked:hover:bg-strongCyan lg:h-[22px] lg:w-11'
-									onClick={() => setBilling(prev => (prev === 'month' ? 'year' : 'month'))}
-								></input>
-								<div className='relative h-7 w-7 transition before:absolute before:left-[-76px] before:h-7 before:w-7 before:cursor-pointer before:rounded-full before:bg-white peer-checked:translate-x-10 lg:h-[14px] lg:w-[14px] before:lg:-left-10 before:lg:h-[14px] before:lg:w-[14px] peer-checked:lg:translate-x-[22px]'></div>
-							</div>
+							<input
+								id='billing-toggle'
+								type='checkbox'
+								className='peer flex h-[44px] w-[84px] cursor-pointer appearance-none items-center rounded-full bg-lightGrayBlue transition checked:bg-strongCyan hover:bg-lightCyan checked:hover:bg-strongCyan lg:h-[22px] lg:w-11'
+								onClick={() => setBilling(prev => (prev === 'month' ? 'year' : 'month'))}
+							/>
+							<span className='relative h-7 w-7 transition before:absolute before:left-[-76px] before:h-7 before:w-7 before:cursor-pointer before:rounded-full before:bg-white peer-checked:translate-x-10 lg:h-[14px] lg:w-[14px] before:lg:-left-10 before:lg:h-[14px] before:lg:w-[14px] peer-checked:lg:translate-x-[22px]'></span>
 							<span className='min-w-fit cursor-pointer text-grayBlue lg:w-auto'>Yearly Billing</span>
 						</label>
 						<div className='ml-4 flex items-center rounded-full bg-lightRed px-2 py-1 text-xl text-darkRed lg:ml-2 lg:px-[7px] lg:py-[1px] lg:text-[10px] lg:leading-normal'>
