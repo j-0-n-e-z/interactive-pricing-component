@@ -63,22 +63,21 @@ function App() {
 							<small className='ml-2 text-[28px] text-grayBlue lg:text-base'>/ {billing}</small>
 						</div>
 					</div>
-					<label>
-						<input
-							className='range-input absolute top-[182px] mb-[57px] w-[calc(100%-6rem)] lg:static lg:w-full'
-							type='range'
-							value={price}
-							step={rangeInput.step}
-							min={rangeInput.min}
-							max={rangeInput.max}
-							onChange={handleInputChanged}
-							style={{
-								background: `linear-gradient(to right, hsl(var(--light-cyan)) ${
-									((price - rangeInput.min) * 100) / (rangeInput.max - rangeInput.min)
-								}%, hsl(var(--light-gray)) 0`
-							}}
-						/>
-					</label>
+					<input
+						className='range-input absolute top-[182px] mb-[57px] w-[calc(100%-6rem)] lg:static lg:w-full'
+						type='range'
+						value={price}
+						step={rangeInput.step}
+						min={rangeInput.min}
+						max={rangeInput.max}
+						onChange={handleInputChanged}
+						style={{
+							background: `linear-gradient(to right, hsl(var(--light-cyan)) ${
+								((price - rangeInput.min) * 100) / (rangeInput.max - rangeInput.min)
+							}%, hsl(var(--light-gray)) 0`
+						}}
+						aria-labelledby='range'
+					/>
 					<div className='mb-20 flex lg:mb-10'>
 						<label className='ml-16 flex items-center justify-center text-2xl lg:ml-[105px] lg:text-[12px] lg:leading-normal'>
 							<span className='mr-7 min-w-fit cursor-pointer text-grayBlue lg:mr-4 lg:w-auto'>Monthly Billing</span>
