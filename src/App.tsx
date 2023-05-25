@@ -76,7 +76,7 @@ function App() {
 								((price - rangeInput.min) * 100) / (rangeInput.max - rangeInput.min)
 							}%, hsl(var(--light-gray)) 0`
 						}}
-						aria-label='range'
+						aria-label='price-input'
 					/>
 					<div className='mb-20 flex lg:mb-10'>
 						<label className='ml-16 flex items-center justify-center text-2xl lg:ml-[105px] lg:text-[12px] lg:leading-normal'>
