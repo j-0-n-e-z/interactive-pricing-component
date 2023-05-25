@@ -19,8 +19,10 @@ function App() {
 					return 100
 				case currentPrice <= rangeInput.max * 0.75:
 					return 250
-				default:
+				case currentPrice > rangeInput.max * 0.75:
 					return 500
+				default:
+					return 100
 			}
 		})
 	}
