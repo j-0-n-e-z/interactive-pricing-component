@@ -34,6 +34,10 @@ function App() {
 		alert(`Selected price: $${billingPrice}\nSelected billing: ${billing}`)
 	}
 
+	function toggleBilling() {
+		setBilling(prev => (prev === 'month' ? 'year' : 'month'))
+	}
+
 	return (
 		<main className='grid min-h-screen w-full place-items-center content-start bg-mainBackground bg-background bg-[length:320%] bg-no-repeat font-Manrope lg:bg-auto'>
 			<div className='mb-[130px] mt-[175px] flex flex-col items-center lg:mb-[88px] lg:mt-[102px]'>
@@ -84,7 +88,7 @@ function App() {
 							<input
 								type='checkbox'
 								className='peer flex h-[44px] w-[84px] cursor-pointer appearance-none items-center rounded-full bg-lightGrayBlue transition checked:bg-strongCyan hover:bg-lightCyan checked:hover:bg-strongCyan lg:h-[22px] lg:w-11'
-								onClick={() => setBilling(prev => (prev === 'month' ? 'year' : 'month'))}
+								onClick={toggleBilling}
 							/>
 							<span className='relative h-7 w-7 transition before:absolute before:left-[-76px] before:h-7 before:w-7 before:cursor-pointer before:rounded-full before:bg-white peer-checked:translate-x-10 lg:h-[14px] lg:w-[14px] before:lg:-left-10 before:lg:h-[14px] before:lg:w-[14px] peer-checked:lg:translate-x-[22px]'></span>
 							<span className='min-w-fit cursor-pointer text-grayBlue lg:w-auto'>Yearly Billing</span>
