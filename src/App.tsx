@@ -29,7 +29,7 @@ function App() {
 
 	function handleSubmit(e: FormEvent) {
 		e.preventDefault()
-		alert(`Selected price: $${price}\nSelected billing: ${billing}`)
+		alert(`Selected price: $${price * monthsCount[billing]}\nSelected billing: ${billing}`)
 	}
 
 	return (
