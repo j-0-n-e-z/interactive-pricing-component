@@ -27,9 +27,11 @@ function App() {
 		})
 	}
 
+	const billingPrice = price * monthsCount[billing]
+
 	function handleSubmit(e: FormEvent) {
 		e.preventDefault()
-		alert(`Selected price: $${price * monthsCount[billing]}\nSelected billing: ${billing}`)
+		alert(`Selected price: $${billingPrice}\nSelected billing: ${billing}`)
 	}
 
 	return (
@@ -56,7 +58,7 @@ function App() {
 						</span>
 						<div className='flex w-full items-center justify-center gap-x-3 lg:gap-x-0'>
 							<span className='text-[64px] font-extrabold tracking-tight text-darkBlue lg:ml-auto lg:text-[40px]'>
-								${(price * monthsCount[billing]).toFixed(2)}
+								${billingPrice.toFixed(2)}
 							</span>
 							<small className='ml-2 text-[28px] text-grayBlue lg:text-base'>/ {billing}</small>
 						</div>
