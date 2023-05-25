@@ -61,6 +61,7 @@ function App() {
 							<small className='ml-2 text-[28px] text-grayBlue lg:text-base'>/ {billing}</small>
 						</div>
 					</div>
+					<label htmlFor='range' />
 					<input
 						id='range'
 						className='range-input absolute top-[182px] mb-[57px] w-[calc(100%-6rem)] lg:static lg:w-full'
