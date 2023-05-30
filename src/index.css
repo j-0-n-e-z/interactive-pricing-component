@@ -6,9 +6,8 @@
 
 @layer base {
 	:root {
-		--light-gray: 224 65% 95%;
-		--strong-cyan: 174 86% 45%;
-		--light-cyan: 174 77% 80%;
+		--light-gray: theme('colors.lightGray');
+		--light-cyan: theme('colors.lightCyan');
 		--range-track-height: 8px;
 		--range-track-height-big: 15px;
 		--slider-thumb-size: 40px;
@@ -17,9 +16,9 @@
 		--slider-thumb-margin-top-big: -35px;
 		--slider-thumb-brightness: brightness(90%);
 		--slider-thumb-transition: all 0.08s ease;
-		--slider-thumb-background: hsl(var(--strong-cyan)) url('/assets/images/icon-slider.svg') center no-repeat;
-		--slider-thumb-background-big: hsl(var(--strong-cyan)) url('/assets/images/icon-slider.svg') center/55% no-repeat;
-		--slider-thumb-box-shadow: 0 15px 40px 0 hsl(var(--strong-cyan));
+		--slider-thumb-background: theme('colors.strongCyan') url('/assets/images/icon-slider.svg') center no-repeat;
+		--slider-thumb-background-big: theme('colors.strongCyan') url('/assets/images/icon-slider.svg') center/55% no-repeat;
+		--slider-thumb-box-shadow: 0 15px 40px 0 theme('colors.strongCyan');
 	}
 }
 

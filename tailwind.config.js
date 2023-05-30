@@ -6,16 +6,16 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				mainBackground: 'hsl(230, 100%, 99%)',
-				darkBlue: 'hsl(227, 35%, 25%)',
-				grayBlue: 'hsl(225, 20%, 60%)',
-				lightGrayBlue: 'hsl(223, 50%, 87%)',
-				darkRed: 'hsl(15, 100%, 70%)',
-				lightRed: 'hsl(14, 92%, 95%)',
-				paleBlue: 'hsl(226, 100%, 87%)',
-				lightGray: 'hsl(var(--light-gray))',
-				strongCyan: 'hsl(var(--strong-cyan))',
-				lightCyan: 'hsl(var(--light-cyan))'
+				mainBackground: 'hsl(230 100% 99%)',
+				darkBlue: 'hsl(227 35% 25%)',
+				grayBlue: 'hsl(225 20% 60%)',
+				lightGrayBlue: 'hsl(223 50% 87%)',
+				darkRed: 'hsl(15 100% 70%)',
+				lightRed: 'hsl(14 92% 95%)',
+				paleBlue: 'hsl(226 100% 87%)',
+				lightGray: 'hsl(224 65% 95%)',
+				strongCyan: 'hsl(174 86% 45%)',
+				lightCyan: 'hsl(174 77% 80%)'
 			},
 			backgroundImage: {
 				background: 'url(/assets/images/bg-pattern.svg)'
