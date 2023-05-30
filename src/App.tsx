@@ -39,7 +39,7 @@ function App() {
 	}
 
 	return (
-		<main className='grid min-h-screen w-full place-items-center content-start bg-mainBackground bg-background bg-[length:320%] bg-no-repeat font-Manrope lg:bg-auto'>
+		<main className='grid min-h-screen w-full place-items-center content-start bg-primary bg-pattern bg-[length:320%] bg-no-repeat font-Manrope lg:bg-auto lg:bg-top'>
 			<div className='mb-[130px] mt-[175px] flex flex-col items-center lg:mb-[88px] lg:mt-[102px]'>
 				<img
 					className='absolute top-[110px] z-0 w-[300px] lg:top-[67px] lg:w-auto'
