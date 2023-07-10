@@ -1,6 +1,6 @@
 import { FormEvent, useState } from 'react'
-import { Billing, discount, monthsCount } from './data/billings'
 import { CheckIcon } from './CheckIcon'
+import { Billing, discount, monthsCount } from './data/billings'
 import { rangeInput } from './data/rangeInput'
 
 function App() {
@@ -83,11 +83,11 @@ function App() {
 						aria-label='price-input'
 					/>
 					<div className='mb-20 flex lg:mb-10'>
-						<label className='ml-16 flex items-center justify-center text-2xl lg:ml-[105px] lg:text-[12px] lg:leading-normal'>
+						<label className='ml-10 flex items-center justify-center text-2xl lg:ml-[105px] lg:text-[12px] lg:leading-normal'>
 							<span className='min-w-fit cursor-pointer text-grayBlue lg:w-auto'>Monthly Billing</span>
 							<input
 								type='checkbox'
-								className='relative mx-7 flex h-[44px] w-[84px] cursor-pointer appearance-none items-center rounded-full bg-lightGrayBlue duration-300 after:absolute after:left-2 after:h-7 after:w-7 after:rounded-full after:bg-white after:transition checked:bg-strongCyan checked:after:translate-x-10 hover:bg-lightCyan checked:hover:bg-strongCyan lg:mx-4 lg:h-[22px] lg:w-11 after:lg:left-1 after:lg:h-[14px] after:lg:w-[14px] checked:after:lg:translate-x-[22px]'
+								className='relative mx-4 flex h-[44px] w-[84px] cursor-pointer appearance-none items-center rounded-full bg-lightGrayBlue duration-300 after:absolute after:left-2 after:h-7 after:w-7 after:rounded-full after:bg-white after:transition checked:bg-strongCyan checked:after:translate-x-10 hover:bg-lightCyan checked:hover:bg-strongCyan lg:mx-4 lg:h-[22px] lg:w-11 after:lg:left-1 after:lg:h-[14px] after:lg:w-[14px] checked:after:lg:translate-x-[22px]'
 								onClick={toggleBilling}
 							/>
 							<span className='min-w-fit cursor-pointer text-grayBlue lg:w-auto'>Yearly Billing</span>
